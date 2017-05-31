@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="center-wrapper">
+      <div class="top-menu">
+        <div class="top-menu__logo">
+          <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип"></a>
+        </div>
+        <button class="top-menu__btn" type="button">Открыть меню</button>
+        <nav class="main-nav top-menu__nav  main-nav--closed  main-nav--nojs">
+          <ul class="main-nav__list  main-nav__list--catalog">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--form">
+              <a class="main-nav__item-link" href="form.html">Вязание на заказ</a>
+          </li>
+          </ul>
+          <ul class="main-nav__list  main-nav__list--user">
+            <li class="main-nav__item  main-nav__item--search">
+              <a class="main-nav__item-link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--basket">
+              <a class="main-nav__item-link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list  main-nav__list--info">
+            <li class="main-nav__item  main-nav__item--new">
+              <a class="main-nav__item-link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--sale"><a class="main-nav__item-link" href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--delivery">
+              <a class="main-nav__item-link" href="#">Бесплатная доставка по России</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <header class="page-header">
+        <h1 class="page-header__title">Каталог товаров</h1>
+      </header>
+      <section class="catalog">
+        <article class="catalog-card">
+          <a class="catalog-card__link-photo" href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фото товара"></a>
+          <div class="catalog-card__text-block">
+            <a class="catalog-card__link-title" href="#"><h2 class="catalog-card__title">Зайчик-попрыгайчик</h2></a>
+            <p class="catalog-card__description">Рост 30 см, вес 200 г</p>
+            <p class="catalog-card__price">1 200 руб.
+            <a class="catalog-card__link-basket  modal-link" href="#"><img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину"></a></p>
+          </div>
+        </article>
+        <article class="catalog-card">
+          <a class="catalog-card__link-photo" href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Фото товара"></a>
+          <div class="catalog-card__text-block">
+            <a class="catalog-card__link-title" href="#"><h2 class="catalog-card__title">Корзинка для белья</h2></a>
+            <p class="catalog-card__description">Диаметр 15 см, высота 10 см</p>
+            <p class="catalog-card__price">690 руб.
+              <a class="catalog-card__link-basket  modal-link" href="#"><img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину"></a>
+            </p>
+          </div>
+        </article>
+        <article class="catalog-card">
+          <a class="catalog-card__link-photo" href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Фото товара"></a>
+          <div class="catalog-card__text-block">
+            <a class="catalog-card__link-title" href="#"><h2 class="catalog-card__title">Большая корзинка для игрушек</h2></a>
+            <p class="catalog-card__description">Диаметр 30 см, высота 30 см</p>
+            <p class="catalog-card__price">1 500 руб.
+              <a class="catalog-card__link-basket  modal-link" href="#"><img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину"></a>
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="video-block">
+        <h2 class="video-block__title">Процесс производства</h2>
+        <div class="video-block__video"></div>
+        <p class="video-block__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="btn video-block__btn" href="#">Сделать заказ</a>
+      </section>
+      <footer class="footer">
+        <a class="footer__logo"><img src="img/logo-mobile.svg" width="102" height="34" alt="Логотип"></a>
+        <div class="social-box">
+          <p class="visually-hidden">Мы в соцсетях:</p>
+          <p class="social">
+            <a href="#" class="social-btn  social-btn--inst">Инстаграм</a>
+            <a href="#" class="social-btn  social-btn--fb">Фейсбук</a>
+            <a href="#" class="social-btn  social-btn--tw">Твиттер</a>
+          </p>
+        </div>
+        <div class="footer__copyright">
+          <b class="footer__copyright-text">Разработано</b>
+          <a href="https://htmlacademy.ru">HTMLAcademy></a>       
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <span class="modal__title">Добавить в корзину</span>
+      <span class="modal__text">Выберите размер:</span>
+      <form class="modal__form" action="http://example.ru/" method="post">
+        <input class="modal__field" type="radio" name="size" id="size1" checked>
+        <label class="modal__label" for="size1">S</label>
+        <input class="modal__field" type="radio" name="size" id="size2">
+        <label class="modal__label" for="size2">M</label>
+        <input class="modal__field" type="radio" name="size" id="size3">
+        <label class="modal__label" for="size3">L</label>
+        <button class="modal__btn" type="submit">Добавить</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
