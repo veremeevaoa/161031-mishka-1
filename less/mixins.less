@@ -1,0 +1,27 @@
+.center-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media @tablet-widths {
+    width: 768px;
+  }
+  @media @desktop-widths {
+    width: 1150px;
+  }
+}
+.hidden() {
+  display: none;
+}
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.font(@family: @common; @size: 15px; @height: 24px;) {
+  font-family: @family;
+  font-size: @size;
+  line-height: @height;
+}
