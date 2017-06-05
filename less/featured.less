@@ -1,0 +1,70 @@
+.featured {
+  .font;
+  position: relative;
+  margin: 0 30px 20px;
+  padding: 0;
+}
+.featured::after {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  min-height: 10px;
+  background: @bg-basecolor url("../img/zigzag-line-decktop.svg");//почему не отображается?
+}
+.featured__title {
+  .font(@bold;25px;30px);
+  margin-top: 25px;
+  margin-bottom: 3px;
+  padding-bottom: 0;
+  color: @text-color;
+}
+.featured__action-title {
+  .font(@bold;17px;17px);
+  margin-bottom: 0px;
+  padding-top: 0;
+  color: @lightgreen;
+  text-transform: uppercase;
+}
+.featured__description {
+  margin-top: 20px;
+}
+.featured__properties-table {
+  display: table;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+.featured__properties-row {
+  display: table-row;
+  
+}
+.featured__properties-cell {
+  display: table-cell;
+  padding: 7px 0 8px;
+  border-bottom: 1px solid @delimiter-color;
+}
+.featured__properties-cell--left {
+  width: 38%;
+}
+.featured__properties-cell--right {
+  width: 60%;
+}
+.featured__photo {
+  width: 100%;
+  height: auto;
+}
+.featured__price {
+  margin-top: 20px;
+  margin-bottom: 26px;
+  .font(@bold;17px;);
+  text-align: center;
+}
+.featured__btn {
+  width: 98%;
+  margin-bottom: 25px;
+  padding: 12px 0;
+}

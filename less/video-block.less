@@ -1,0 +1,26 @@
+.video-block {
+  margin: 0 30px 60px;
+  padding: 23px 34px 32px;;
+  border: 1px solid @delimiter-color;
+}
+.video-block__title {
+  .font(@bold;17px;);
+  margin: 0;
+  margin-bottom: 23px;
+  padding-left: 55px;
+  color: @text-color;
+  background: transparent url("../img/icon-video.svg") no-repeat left top;
+}
+.video-block__video {
+  width: 260px;
+  height: 150px;
+  margin-left: -34px;
+  background:
+    url("../img/icon-play.svg") no-repeat center,
+    @delimiter-color url("../img/video-mobile@1x.jpg") no-repeat center;
+}
+.video-block__description {
+  .font(@size:13px;);
+  display: block;
+  margin: 22px 0 25px;
+}
