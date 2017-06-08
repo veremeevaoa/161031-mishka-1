@@ -10,12 +10,12 @@
   </head>
   <body>
     <div class="center-wrapper">
-      <div class="top-menu  top-menu--closed  top-menu--nojs">
+      <div class="top-menu">
         <div class="top-menu__logo">
           <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип"></a>
         </div>
-        <button class="top-menu__btn" type="button">Открыть меню</button>
-        <nav class="main-nav  top-menu__nav">
+        <button class="top-menu__btn  top-menu__btn--closed" type="button">Открыть меню</button>
+        <nav class="main-nav  top-menu__nav  main-nav--closed  main-nav--no-js">
           <ul class="main-nav__list  main-nav__list--catalog">
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a>
@@ -59,41 +59,41 @@
             </fieldset>
             <fieldset class="order-form__category  order-form__category--color">
               <legend class="order-form__category-name  order-form__category-name--color">Цвет</legend>
-              <input class="order-form__color-field" type="checkbox" name="color1" id="color1" required checked>
+              <input class="order-form__color-field" type="checkbox" name="color1" id="color1"  checked>
               <label class="order-form__color-label" for="color1">Белый</label>
-              <input class="order-form__color-field" type="checkbox" name="color2" id="color2" required checked>
+              <input class="order-form__color-field" type="checkbox" name="color2" id="color2"  checked>
               <label class="order-form__color-label" for="color2">Серый</label>
-              <input class="order-form__color-field" type="checkbox" name="color3" id="color3" required>
+              <input class="order-form__color-field" type="checkbox" name="color3" id="color3">
               <label class="order-form__color-label" for="color3">&laquo;Тиффани&raquo;</label>
-              <input class="order-form__color-field" type="checkbox" name="color4" id="color4" required>
+              <input class="order-form__color-field" type="checkbox" name="color4" id="color4">
               <label class="order-form__color-label" for="color4">Черный</label>
-              <input class="order-form__color-field" type="checkbox" name="color5" id="color5" required>
+              <input class="order-form__color-field" type="checkbox" name="color5" id="color5">
               <label class="order-form__color-label" for="color5">Розовый</label>
-              <input class="order-form__color-field" type="checkbox" name="color6" id="color6" required>
+              <input class="order-form__color-field" type="checkbox" name="color6" id="color6">
               <label class="order-form__color-label" for="color6">Оранжевый</label>
             </fieldset>
             <fieldset class="order-form__category  order-form__category--username">
               <legend class="order-form__category-name  order-form__category-name--username">ФИО</legend>
               <label class="order-form__name-label" for="author-name">Имя:</label>
-              <input class="order-form__name-field" type="text" name="name" id="author-name" placeholder="Введите ваше имя" required>
+              <input class="order-form__name-field" type="text" name="name" id="author-name" placeholder="Введите ваше имя*" required>
               <label class="order-form__name-label" for="surname">Фамилия:</label>
-              <input class="order-form__name-field" type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
+              <input class="order-form__name-field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
               <label class="order-form__name-label" for="middle-name">Отчество:</label>
               <input class="order-form__name-field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете" required>
             </fieldset>
             <fieldset class="order-form__category  order-form__category--tel">
               <legend class="order-form__category-name  order-form__category-name--tel">Тел</legend>
-              <input class="order-form__telephon-field" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ" required>
+              <input class="order-form__telephon-field" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
             </fieldset>
             <fieldset class="order-form__category  order-form__category--email">
               <legend class="order-form__category-name  order-form__category-name--email">E-mail</legend>
-              <input class="order-form__email-field" type="email" name="email" placeholder="Ваш Email" required>
+              <input class="order-form__email-field" type="email" name="email" placeholder="Ваш Email*" required>
             </fieldset>
             <fieldset class="order-form__category  order-form__category--description">
               <legend class="order-form__category-name  order-form__category-name--description">Доп</legend>
               <textarea class="order-form__description-field" rows="6" name="order-description" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
             </fieldset>
-            <p class="order-form__note">Все поля обязательны для заполнения</p>
+            <p class="order-form__note">*Поля обязательны для заполнения</p>
             <button class="btn order-form__btn" type="submit">Отправить заказ</button>
           </form>
         </section>
@@ -109,10 +109,10 @@
         </div>
         <div class="footer__copyright">
           <b class="footer__copyright-text">Разработано</b>
-          <a href="https://htmlacademy.ru">HTMLAcademy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive">HTMLAcademy</a>
         </div>
       </footer>
     </div>
-    <script src="js/"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
