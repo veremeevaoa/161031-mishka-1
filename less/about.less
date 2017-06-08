@@ -116,3 +116,136 @@
 .about__arrow--right {
   background: transparent url("../img/icon-right-arrow.svg") no-repeat 50%;
 }
+
+@media @tablet-widths {
+  .about {
+    margin: 0;
+    margin-bottom: 66px;
+    padding: 1px 50px;
+//    background-color: beige;
+  }
+  .about__title {
+    .font(@bold;43px;44px);
+    margin-top: 50px;
+    margin-left: -5px;
+    margin-bottom: 15px;
+  }
+  .about__slogan-list {
+    display: inline-block;
+    width: 49.5%;
+    margin-bottom: 40px;
+    vertical-align: top;
+  }
+  .about__slogan-item {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 29px;
+  }
+  .about__slogan-text {
+    .font(@bold;20px;25px);
+    padding-top: 77px;
+    color: @text-color;
+    &::before {
+      top: 28px;
+      width: 55px;
+      height: 26px;
+      padding-bottom: 20px;
+    }
+  }
+  .about__review-wrapper {
+    position: relative;
+    min-height: 455px;
+//    margin-top: 10px;
+    margin-left: -50px;
+    padding: 1px 0 1px 47px;
+    background: transparent url("../img/review@1x.jpg") no-repeat top left;
+  }
+  .about__title--reviews {
+    margin-top: 58px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+  }
+  .about__review-item {
+    margin-top: 33px;
+    margin-left: 2px;
+  }
+  .about__toggles {
+    width: 25%;
+    padding: 0;
+    position: absolute;
+    right: -4px;
+    bottom: 48px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .about__arrow {
+    width: 49%;
+    margin-right: -7px;
+    border: none;
+  }
+  .about__btn {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 24%;
+  }
+}
+
+@media @desktop-widths {
+  .about {
+    width: 75%;
+    margin: 0;
+    margin-left: 171px;
+    margin-bottom: 80px;
+    padding: 1px 50px;
+  }
+  .about__title {
+    .font(@bold;53px;57px);
+    margin-top: 118px;
+    margin-bottom: 15px;
+  }
+  .about__slogan-list {
+    display: inline-block;
+    width: 34%;
+    margin-left: 5px;
+    margin-bottom: 47px;
+    vertical-align: top;
+  }
+  .about__slogan-list--left {
+    width: 27.2%;
+    margin-right: 107px;
+  }
+  .about__slogan-item {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 29px;
+  }
+  .about__slogan-text {
+    .font(@bold;20px;25px);
+    padding-top: 76px;
+    color: @text-color;
+  }
+  .about__review-wrapper {
+    min-height: 457px;
+    margin-left: -171px;
+    padding-left: 173px;
+  }
+  .about__title--reviews {
+    margin-top: 50px;
+    margin-bottom: 49px;
+    padding-bottom: 0;
+  }
+  .about__toggles {
+    width: 18%;
+    right: -25px;
+    bottom: 100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .about__btn {
+    position: absolute;
+    top: 80px;
+    right: -17px;
+    width: 16.5%;
+  }
+}

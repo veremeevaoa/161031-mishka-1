@@ -6,7 +6,7 @@ var over = document.querySelector(".modal-overlay");
 
 //отключение варианта стилей без js при загрузке страницы
 
-function funonload () {
+function funonload() {
   mainMenu.classList.remove("main-nav--no-js");
 }
 window.onload = funonload;
@@ -16,16 +16,16 @@ window.onload = funonload;
 menuBtn.addEventListener("click", function (event) {
   event.preventDefault();
   if (menuBtn.classList.contains("top-menu__btn--closed")) {
-      menuBtn.classList.remove("top-menu__btn--closed");
-      menuBtn.classList.add("top-menu__btn--opened");
-      mainMenu.classList.remove("main-nav--closed");
-      mainMenu.classList.add("main-nav--opened");
-    } else {
-      menuBtn.classList.remove("top-menu__btn--opened");
-      menuBtn.classList.add("top-menu__btn--closed");
-      mainMenu.classList.remove("main-nav--opened");
-      mainMenu.classList.add("main-nav--closed");
-    }
+    menuBtn.classList.remove("top-menu__btn--closed");
+    menuBtn.classList.add("top-menu__btn--opened");
+    mainMenu.classList.remove("main-nav--closed");
+    mainMenu.classList.add("main-nav--opened");
+  } else {
+    menuBtn.classList.remove("top-menu__btn--opened");
+    menuBtn.classList.add("top-menu__btn--closed");
+    mainMenu.classList.remove("main-nav--opened");
+    mainMenu.classList.add("main-nav--closed");
+  }
 });
 
 //модальное окно формы заказа

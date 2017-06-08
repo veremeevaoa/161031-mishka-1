@@ -15,3 +15,24 @@
   font-weight: 700;
   color: @text-color;
 }
+
+@media @tablet-widths {
+  .page-header {
+    min-height: 223px;
+  }
+  .page-header__title {
+    .font(@bold;43px;50px;);
+    display: block;
+    margin-top: 92px;
+  }
+}
+@media @desktop-widths {
+  .page-header {
+    min-height: 250px;
+  }
+  .page-header__title {
+    .font(@bold;53px;60px;);
+    display: block;
+    margin-top: 90px;
+  }
+}

@@ -21,3 +21,43 @@
   color: @text-basecolor;
   text-decoration: none;
 }
+
+@media @tablet-widths {
+  .review__author {
+    .font(@bold;14px;26px);
+    display: block;
+    width: 45%;
+    margin-top: 57px;
+    padding-top: 1px;
+  }
+  .review__email a {
+  .font(@common;17px;28px);
+}
+  .review p {
+    .font(@size:17px;@height:30px;);
+  }
+}
+@media @desktop-widths {
+  .review p {
+    width: 90%;
+    padding: 0;
+  }
+  .review__author  {
+    .font;
+    display: block;
+    margin: 0;
+    margin-top: 37px;
+    font-style: normal;
+  }
+  .review__name {
+    .font(@bold;17px;26px);
+    display: block;
+    color: @text-basecolor;
+    text-decoration: none;
+  }
+  .review__email a {
+    .font(@common;17px;26px);
+    color: @text-basecolor;
+    text-decoration: none;
+  }
+}

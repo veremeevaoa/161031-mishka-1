@@ -36,3 +36,27 @@
   height: 34px;
   box-sizing: border-box;
 }
+
+@media @tablet-widths {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    align-items: center;
+  }
+  .footer__logo {
+    display: inline-block;
+    padding-top: 10px;
+    vertical-align: bottom;
+  }
+  .footer__copyright {
+    margin-right: -3px;
+    padding-top: 15px;
+    border: none;
+  }
+  .footer__copyright .footer__copyright-text {
+    .font(@bold;19px;);
+    margin-right: 25px;
+  }
+}

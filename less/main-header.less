@@ -42,3 +42,58 @@
 .main-header__submenu-link--toys {
   background: @darkgreen url("../img/icon-toy.svg") no-repeat 90% 50%;
 }
+
+@media @tablet-widths {
+  .main-header {
+    min-height: 746px;
+  }
+  .main-header__submenu {
+    display: flex;
+    width: 87%;
+    margin: 0 50px;
+    background: #ccc;
+  }
+  .main-header__submenu-item {
+    width: 50%;
+    background: #fff;
+  }
+  .main-header__submenu-link {
+    .font(@bold;19px;30px;);
+    padding: 28px 38px 34px;
+    padding-right: 135px;
+  }
+  .main-header__title {
+    .font(@bold;43px;50px);
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 372px;
+    color: @text-color;
+  }
+}
+@media @desktop-widths {
+  .main-header {
+    min-height: 746px;
+  }
+  .main-header__submenu {
+    display: flex;
+    flex-direction: row;
+    width: 91.3%;
+    margin: 0 50px;
+  }
+  .main-header__submenu-link {
+    .font(@bold;19px;30px);
+    display: block;
+    padding: 30px 40px 34px;
+    padding-right: 320px;
+    color: @bg-basecolor;
+    text-align: left;
+    text-decoration: none;
+  }
+  .main-header__title {
+    .font(@bold;53px;57px);
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 360px;
+    color: @text-color;
+  }
+}

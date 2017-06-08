@@ -51,3 +51,122 @@
 .contacts__btn {
   margin-bottom: 32px;
 }
+
+@media @tablet-widths {
+  .contacts {
+    margin: 0;
+    margin-top: 18px;
+    padding: 1px 50px;
+  }
+  .contacts__title {
+    .font(@bold;43px;50px);
+    position: relative;
+    margin-left: -5px;
+    margin-bottom: 50px;
+  }
+  .contacts__title::after {
+    position: absolute;
+    top: -17px;
+    right: 3px;
+    width: 47px;
+    height: 82px;
+    content: "";
+    background: transparent url("../img/icon-flag.svg") no-repeat center;
+  }
+  .contacts__table {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    vertical-align: top;
+  }
+  .contacts__row {
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: top;
+  }
+  .contacts__cell {
+    .font(@size:17px;@height:30px);
+    display: inline-block;
+    vertical-align: top;
+  }
+  .contacts__cell--left {
+    width: 22%;
+  }
+  .contacts__email-link {
+    .font(@size:17px;@height:30px);
+    padding-bottom: 1px;
+    color: @text-basecolor;
+    text-decoration: none;
+    border-bottom: 1px solid @lightgreen;
+  }
+  .contacts__cell--right {
+    width: 75%;
+  }
+  .contacts__map {
+    margin-left: -50px;
+    margin-right: -50px;
+    background-size: auto;
+  }
+  .contacts__btn {
+    width: 34%;
+    margin-top: 15px;
+    margin-bottom: 55px;
+    margin-left: 32.7%;
+  }
+}
+@media @desktop-widths {
+  .contacts {
+    .clearfix();
+    margin-top: 125px;
+    margin-bottom: 50px;
+  }
+  .contacts__title {
+    .font(@bold;53px;60px);
+    display: block;
+    position: relative;
+    margin-bottom: 47px;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-left: 120px;
+  }
+  .contacts__title::after {
+    position: absolute;
+    top: -7px;
+    left: 13px;
+    width: 47px;
+    height: 82px;
+    content: "";
+    background: transparent url("../img/icon-flag.svg") no-repeat center;
+  }
+  .contacts__table {
+    display: table;
+    width: 28%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 175px;
+    vertical-align: top;
+  }
+  .contacts__row {
+    display: table-row;
+    width: 100%;
+    vertical-align: top;
+  }
+  .contacts__cell {
+    display: table-cell;
+  }
+  .contacts__cell--left {
+    width: 26%;
+  }
+  .contacts__map {
+    float: right;
+    width: 54.5%;
+    margin-top: -380px;
+    background-size: auto;
+  }
+  .contacts__btn {
+    width: 21.5%;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    margin-left: 16.8%;
+  }
+}

@@ -51,3 +51,143 @@
 .main-nav__list--info {
   display: none;
 }
+
+@media @tablet-widths {
+  .main-nav__list {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    display: block;
+  }
+  .main-nav__list--catalog {
+    display: block;
+    left: 32px;
+    display: flex;
+    margin-top: 10px;
+    width: 52%;
+  }
+  .main-nav__list--catalog .main-nav__item-link {
+    .font(@bold;);
+    display: block;
+    margin-top: 10px;
+    padding: 7px 0;
+    padding-right: 36px;
+    color: @text-basecolor;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .main-nav__list--user {
+    top: 0px;
+    right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+  }
+  .main-nav__list--user .main-nav__item {
+    margin: 0;
+    border-left: 1px solid @delimiter-color;
+  }
+  .main-nav__list--user .main-nav__item-link {
+    margin: 0;
+    padding: 31px 30px 33px;
+    border: none;
+  }
+  .main-nav__item--search .main-nav__item-link {
+    width: 22px;
+    text-indent: -9999px;
+    background: transparent url("../img/icon-search.svg") no-repeat center;
+  }
+  .main-nav__item--basket .main-nav__item-link {
+    width: auto;
+    padding-left: 82px;
+    padding-right: 0;
+    background: transparent url("../img/icon-cart.svg") no-repeat 32px 35px;
+  }
+  .main-nav__list--info {
+    display: flex;
+    justify-content: flex-end;
+    width: 35%;
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+  .main-nav__item--sale {
+    display: none;
+  }
+  .main-nav__item--new {
+    display: none;
+  }
+  .main-nav__item--delivery .main-nav__item-link {
+    .font;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border: none;
+    color: @text-basecolor;
+    background-color: transparent;
+  }
+}
+
+@media @desktop-widths {
+  .main-nav__list--catalog {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 36%;
+    margin: 0;
+    padding: 0;
+  }
+  .main-nav__list--catalog .main-nav__item {
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid @delimiter-color;
+  }
+  .main-nav__list--catalog .main-nav__item-link {
+    .font(@bold;17px;);
+    width: auto;
+    margin: 0;
+    padding: 31px 30px 33px 0;
+    border-bottom: none;
+  }
+  .main-nav__item--form .main-nav__item-link {//почему правило не работает?
+    padding-left: 30px;
+  }
+  .main-nav__list--user {
+    width: 36%;
+  }
+  .main-nav__list--info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .main-nav__item--sale {
+    display: inline-block;
+    
+  }
+  .main-nav__item--sale .main-nav__item-link {
+    .font(@bold;);
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border: none;
+    color: @text-color;
+    background-color: transparent;
+  }
+  .main-nav__item--new {
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 60px;
+  }
+  .main-nav__item--new .main-nav__item-link {
+    .font(@bold;);
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border: none;
+    color: @text-color;
+    background-color: transparent;
+  }
+  .main-nav__item--delivery {
+    margin-left: auto;
+  } 
+}
