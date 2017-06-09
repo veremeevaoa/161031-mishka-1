@@ -59,27 +59,35 @@
             </fieldset>
             <fieldset class="order-form__category  order-form__category--color">
               <legend class="order-form__category-name  order-form__category-name--color">Цвет</legend>
-              <input class="order-form__color-field" type="checkbox" name="color1" id="color1"  checked>
-              <label class="order-form__color-label" for="color1">Белый</label>
-              <input class="order-form__color-field" type="checkbox" name="color2" id="color2"  checked>
-              <label class="order-form__color-label" for="color2">Серый</label>
-              <input class="order-form__color-field" type="checkbox" name="color3" id="color3">
-              <label class="order-form__color-label" for="color3">&laquo;Тиффани&raquo;</label>
-              <input class="order-form__color-field" type="checkbox" name="color4" id="color4">
-              <label class="order-form__color-label" for="color4">Черный</label>
-              <input class="order-form__color-field" type="checkbox" name="color5" id="color5">
-              <label class="order-form__color-label" for="color5">Розовый</label>
-              <input class="order-form__color-field" type="checkbox" name="color6" id="color6">
-              <label class="order-form__color-label" for="color6">Оранжевый</label>
+              <div class="flex-container  flex-container--color">
+                <input class="order-form__color-field" type="checkbox" name="color1" id="color1"  checked>
+                <label class="order-form__color-label" for="color1">Белый</label>
+                <input class="order-form__color-field" type="checkbox" name="color2" id="color2"  checked>
+                <label class="order-form__color-label" for="color2">Серый</label>
+                <input class="order-form__color-field" type="checkbox" name="color3" id="color3">
+                <label class="order-form__color-label" for="color3">&laquo;Тиффани&raquo;</label>
+                <input class="order-form__color-field" type="checkbox" name="color4" id="color4">
+                <label class="order-form__color-label" for="color4">Черный</label>
+                <input class="order-form__color-field" type="checkbox" name="color5" id="color5">
+                <label class="order-form__color-label" for="color5">Розовый</label>
+                <input class="order-form__color-field" type="checkbox" name="color6" id="color6">
+                <label class="order-form__color-label" for="color6">Оранжевый</label>
+              </div>
             </fieldset>
             <fieldset class="order-form__category  order-form__category--username">
               <legend class="order-form__category-name  order-form__category-name--username">ФИО</legend>
-              <label class="order-form__name-label" for="author-name">Имя:</label>
-              <input class="order-form__name-field" type="text" name="name" id="author-name" placeholder="Введите ваше имя*" required>
-              <label class="order-form__name-label" for="surname">Фамилия:</label>
-              <input class="order-form__name-field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-              <label class="order-form__name-label" for="middle-name">Отчество:</label>
-              <input class="order-form__name-field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете" required>
+              <div class="flex-container  flex-container--name">
+                <label class="order-form__name-label" for="author-name">Имя:</label>
+                <input class="order-form__name-field" type="text" name="name" id="author-name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="flex-container  flex-container--name">
+                <label class="order-form__name-label" for="surname">Фамилия:</label>
+                <input class="order-form__name-field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="flex-container  flex-container--name">
+                <label class="order-form__name-label" for="middle-name">Отчество:</label>
+                <input class="order-form__name-field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете" required>
+              </div>
             </fieldset>
             <fieldset class="order-form__category  order-form__category--tel">
               <legend class="order-form__category-name  order-form__category-name--tel">Тел</legend>
