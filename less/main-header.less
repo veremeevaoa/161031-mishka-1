@@ -38,9 +38,21 @@
   text-align: left;
   text-decoration: none;
   background: @lightgreen url("../img/icon-interior.svg") no-repeat 90% 50%;
+  &:hover {
+    margin-top: -5px;
+    padding-top: 28px;
+    padding-bottom: 41px;
+    background: @lightgreen url("../img/icon-interior.svg") no-repeat 90% 50%-5px;
+  }
+  &:active {
+    color: rgba(255,255,255, 0.3);
+  }
 }
 .main-header__submenu-link--toys {
   background: @darkgreen url("../img/icon-toy.svg") no-repeat 90% 50%;
+  &:hover {
+    background: @darkgreen url("../img/icon-toy.svg") no-repeat 90% 50%-5px;
+  }
 }
 
 @media @tablet-widths {

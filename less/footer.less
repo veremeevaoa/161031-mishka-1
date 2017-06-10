@@ -10,19 +10,21 @@
   padding-top: 25px;
   border-top: 1px solid @delimiter-color;
 }
+
 .footer__copyright .footer__copyright-text,
-.footer__copyright a {
+.footer__copyright .footer__copyright-icon {
   margin: 0;
   padding: 0;
   display: inline;
   vertical-align: top;
+  text-decoration: none;
 }
 .footer__copyright .footer__copyright-text {
   .font(@bold;19px;);
   margin-right: 24px;
   color: @text-color;
 }
-.footer__copyright a {
+.footer__copyright .footer__copyright-icon {
   display: inline-block;
   width: 30px;
   height: 35px;
@@ -30,6 +32,10 @@
   margin-top: -3px;
   text-indent: -9999px;
   background: transparent url("../img/logo-htmlacademy.svg") no-repeat center;
+}
+.footer__copyright .footer__copyright-text:active,
+.footer__copyright .footer__copyright-icon:active {
+  opacity: 0.3;
 }
 .footer__logo-html {
   width: 27px;

@@ -8,6 +8,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+//  padding-left: 75px;
   list-style: none;
 }
 .main-nav__list--user {
@@ -17,14 +18,27 @@
   .font(@bold;17px;);
   display: block;
   width: 100%;
+  padding-left: 75px; 
   padding-top: 27px;
   padding-bottom: 26px;
   color: @text-color;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   background-color: @bg-basecolor;
   border-top: 1px solid @delimiter-color;
   cursor: pointer;
+  &:hover {
+    color: @text-color-hover;
+  }
+  &:active {
+    color: @text-color-active;
+  }
+}
+.main-nav__item--search .main-nav__item-link {
+  background: @bg-basecolor url("../img/icon-search.svg") no-repeat 30px center;
+}
+.main-nav__item--basket .main-nav__item-link {
+  background: @bg-basecolor url("../img/icon-cart.svg") no-repeat 30px center;
 }
 
 //меню без js
@@ -71,11 +85,19 @@
     display: block;
     margin-top: 10px;
     padding: 7px 0;
+    padding-left: 0;
     padding-right: 36px;
     color: @text-basecolor;
     border: none;
     background-color: transparent;
     cursor: pointer;
+//    background-color: beige;
+    &:hover {
+    color: @text-color-hover;
+    }
+    &:active {
+      color: @text-color-active;
+    }
   }
   .main-nav__list--user {
     top: 0px;
@@ -94,6 +116,12 @@
     margin: 0;
     padding: 31px 30px 33px;
     border: none;
+    &:hover {
+    color: @text-color-hover;
+    }
+    &:active {
+      color: @text-color-active;
+    }
   }
   .main-nav__item--search .main-nav__item-link {
     width: 22px;
@@ -105,6 +133,12 @@
     padding-left: 82px;
     padding-right: 0;
     background: transparent url("../img/icon-cart.svg") no-repeat 32px 35px;
+    &:hover {
+    color: @text-color-hover;
+    }
+    &:active {
+      color: @text-color-active;
+    }
   }
   .main-nav__list--info {
     display: flex;
@@ -126,6 +160,12 @@
     border: none;
     color: @text-basecolor;
     background-color: transparent;
+    &:hover {
+      color: @text-color-hover;
+    }
+    &:active {
+      color: @text-color-active;
+    }
   }
 }
 
@@ -138,13 +178,13 @@
     width: 36.5%;
     margin: 0;
     padding: 0;
-    background-color: azure;
+//    background-color: azure;
   }
   .main-nav__list--catalog .main-nav__item {
     margin: 0;
     padding: 0;
     border-right: 1px solid @delimiter-color;
-    background-color: beige;
+//    background-color: beige;
   }
   .main-nav__list--catalog .main-nav__item-link {
     display: block;
@@ -154,9 +194,9 @@
     padding: 31px 35px 32px 0;
     border-bottom: none;
     text-align: left;
-    background-color: aliceblue;
+//    background-color: aliceblue;
   }
-  .main-nav__item--form .main-nav__item-link {//почему правило не работает?
+  .main-nav__item--form .main-nav__item-link {
     padding-left: 35px;
   }
   .main-nav__list--user {
@@ -173,11 +213,18 @@
   }
   .main-nav__item--sale .main-nav__item-link {
     .font(@bold;);
+    padding-left: 0;
     padding-top: 16px;
     padding-bottom: 20px;
     border: none;
     color: @text-color;
     background-color: transparent;
+    &:hover {
+      color: @text-color-hover;
+    }
+    &:active {
+      color: @text-color-active;
+    }
   }
   .main-nav__item--new {
     display: inline-block;
@@ -186,11 +233,18 @@
   }
   .main-nav__item--new .main-nav__item-link {
     .font(@bold;);
+    padding-left: 0;
     padding-top: 16px;
     padding-bottom: 20px;
     border: none;
     color: @text-color;
     background-color: transparent;
+    &:hover {
+      color: @text-color-hover;
+    }
+    &:active {
+      color: @text-color-active;
+    }
   }
   .main-nav__item--delivery {
     margin-left: auto;

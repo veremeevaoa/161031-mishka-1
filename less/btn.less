@@ -10,10 +10,26 @@
   text-align: center;
   vertical-align: top;
   text-decoration: none;
+  &:hover {
+    color: @bg-basecolor;
+    background-color: @text-color;
+  }
+  &:active {
+    color: @bg-basecolor;
+    background-color: rgba(256,256,256, 0.3);
+  }
 }
 .btn a {
   .font(@bold;17px);
   display: block;
   color: @text-basecolor;
   text-decoration: none;
+  &:hover {
+    color: @bg-basecolor;
+    background-color: @text-color;
+  }
+  &:active {
+    color: @bg-basecolor;;
+    background-color: rgba(256,256,256, 0.3);
+  }
 }

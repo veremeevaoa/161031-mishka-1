@@ -2,6 +2,12 @@
   margin: 0 30px 60px;
   padding: 23px 34px 32px;;
   border: 1px solid @delimiter-color;
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0, 0.1);
+  }
 }
 .video-block__title {
   .font(@bold;17px;);
@@ -12,12 +18,42 @@
   background: transparent url("../img/icon-video.svg") no-repeat left top;
 }
 .video-block__video {
+  position: relative;
   width: 260px;
   height: 150px;
   margin-left: -34px;
-  background:
-    url("../img/icon-play.svg") no-repeat center,
-    @delimiter-color url("../img/video-mobile@1x.jpg") no-repeat center;
+  background: @delimiter-color url("../img/video-mobile@1x.jpg") no-repeat center;
+  cursor: pointer;
+}
+.video-block__video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 101px;
+  height: 77px;
+  z-index: 2;
+  margin-left: -50px;
+  margin-top: -39px;
+  background: transparent url("../img/icon-play.svg") no-repeat center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    width: 121px;
+    height: 92px;
+    margin-left: -60px;
+    margin-top: -46px;
+    background-size: contain;
+  }
+  &:active {
+    width: 81px;
+    height: 61px;
+    margin-left: -40px;
+    margin-top: -30px;
+    background-size: contain;
+    opacity: 0.3;
+  }
 }
 .video-block__description {
   .font(@size:13px;);
