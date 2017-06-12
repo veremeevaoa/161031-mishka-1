@@ -8,6 +8,15 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+   
+   <!--
+   Топ-меню. 
+   Класс top-menu__btn--closed меняет вид кнопки меню, 
+   класс main-nav--closed отображает меню закрытым, 
+   класс main-nav--opened показывает открытое меню, 
+   класс main-nav--no-js отображает меню открытым в потоке при выключенном js.
+-->
+   
     <div class="center-wrapper">
       <div class="top-menu">
         <div class="top-menu__logo">
@@ -43,9 +52,15 @@
           </ul>
         </nav>
       </div>
+      
+<!--Шапка-->
+      
       <header class="page-header">
         <h1 class="page-header__title">Каталог товаров</h1>
       </header>
+      
+<!--Блок карточек товара-->
+      
       <section class="catalog">
         <article class="catalog-card">
           <a class="catalog-card__link-photo" href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Фото товара"></a>
@@ -77,12 +92,20 @@
           </div>
         </article>
       </section>
+      
+<!--Блок с видео-->
+      
       <section class="video-block">
         <h2 class="video-block__title">Процесс производства</h2>
-        <div class="video-block__video"></div>
+        <div class="video-block__video">
+          <button class="video-block__video-btn" type="button"></button>
+        </div>
         <p class="video-block__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="btn video-block__btn" href="#">Сделать заказ</a>
       </section>
+      
+<!--Подвал-->
+      
       <footer class="footer">
         <a class="footer__logo"><img src="img/logo-mobile.svg" width="102" height="34" alt="Логотип"></a>
         <div class="social-box">
@@ -94,11 +117,14 @@
           </p>
         </div>
         <div class="footer__copyright">
-          <b class="footer__copyright-text">Разработано</b>
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTMLAcademy</a>
+          <a class="footer__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+          <a class="footer__copyright-icon" href="https://htmlacademy.ru/intensive/adaptive">HTMLAcademy</a>
         </div>
       </footer>
     </div>
+    
+<!--Модальное окно формы заказа-->
+    
     <div class="modal">
       <span class="modal__title">Добавить в корзину</span>
       <span class="modal__text">Выберите размер:</span>

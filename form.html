@@ -9,6 +9,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+   
+<!--Топ-меню. 
+   Класс top-menu__btn--closed меняет вид кнопки меню, 
+   класс main-nav--closed отображает меню закрытым, 
+   класс main-nav--opened показывает открытое меню, 
+   класс main-nav--no-js отображает меню открытым в потоке при выключенном js.
+-->
+   
     <div class="center-wrapper">
       <div class="top-menu">
         <div class="top-menu__logo">
@@ -44,9 +52,15 @@
           </ul>
         </nav>
       </div>
+      
+<!--Шапка-->
+      
       <header class="page-header">
         <h1 class="page-header__title">Вязание на заказ</h1>
       </header>
+      
+<!--Форма заказа-->
+      
       <section class="order-form">
         <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form class="order-form__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -59,27 +73,35 @@
             </fieldset>
             <fieldset class="order-form__category  order-form__category--color">
               <legend class="order-form__category-name  order-form__category-name--color">Цвет</legend>
-              <input class="order-form__color-field" type="checkbox" name="color1" id="color1"  checked>
-              <label class="order-form__color-label" for="color1">Белый</label>
-              <input class="order-form__color-field" type="checkbox" name="color2" id="color2"  checked>
-              <label class="order-form__color-label" for="color2">Серый</label>
-              <input class="order-form__color-field" type="checkbox" name="color3" id="color3">
-              <label class="order-form__color-label" for="color3">&laquo;Тиффани&raquo;</label>
-              <input class="order-form__color-field" type="checkbox" name="color4" id="color4">
-              <label class="order-form__color-label" for="color4">Черный</label>
-              <input class="order-form__color-field" type="checkbox" name="color5" id="color5">
-              <label class="order-form__color-label" for="color5">Розовый</label>
-              <input class="order-form__color-field" type="checkbox" name="color6" id="color6">
-              <label class="order-form__color-label" for="color6">Оранжевый</label>
+              <div class="flex-container  flex-container--color">
+                <input class="order-form__color-field" type="checkbox" name="color1" id="color1"  checked>
+                <label class="order-form__color-label" for="color1">Белый</label>
+                <input class="order-form__color-field" type="checkbox" name="color2" id="color2"  checked>
+                <label class="order-form__color-label" for="color2">Серый</label>
+                <input class="order-form__color-field" type="checkbox" name="color3" id="color3">
+                <label class="order-form__color-label" for="color3">&laquo;Тиффани&raquo;</label>
+                <input class="order-form__color-field" type="checkbox" name="color4" id="color4">
+                <label class="order-form__color-label" for="color4">Черный</label>
+                <input class="order-form__color-field" type="checkbox" name="color5" id="color5">
+                <label class="order-form__color-label" for="color5">Розовый</label>
+                <input class="order-form__color-field" type="checkbox" name="color6" id="color6">
+                <label class="order-form__color-label" for="color6">Оранжевый</label>
+              </div>
             </fieldset>
             <fieldset class="order-form__category  order-form__category--username">
               <legend class="order-form__category-name  order-form__category-name--username">ФИО</legend>
-              <label class="order-form__name-label" for="author-name">Имя:</label>
-              <input class="order-form__name-field" type="text" name="name" id="author-name" placeholder="Введите ваше имя*" required>
-              <label class="order-form__name-label" for="surname">Фамилия:</label>
-              <input class="order-form__name-field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-              <label class="order-form__name-label" for="middle-name">Отчество:</label>
-              <input class="order-form__name-field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете" required>
+              <div class="flex-container  flex-container--name">
+                <label class="order-form__name-label" for="author-name">Имя:</label>
+                <input class="order-form__name-field" type="text" name="name" id="author-name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="flex-container  flex-container--name">
+                <label class="order-form__name-label" for="surname">Фамилия:</label>
+                <input class="order-form__name-field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="flex-container  flex-container--name">
+                <label class="order-form__name-label" for="middle-name">Отчество:</label>
+                <input class="order-form__name-field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете" required>
+              </div>
             </fieldset>
             <fieldset class="order-form__category  order-form__category--tel">
               <legend class="order-form__category-name  order-form__category-name--tel">Тел</legend>
@@ -97,6 +119,9 @@
             <button class="btn order-form__btn" type="submit">Отправить заказ</button>
           </form>
         </section>
+        
+<!--Подвал-->
+        
       <footer class="footer">
         <a class="footer__logo"><img src="img/logo-mobile.svg" width="102" height="34" alt="Логотип"></a>
         <div class="social-box">
@@ -108,8 +133,8 @@
           </p>
         </div>
         <div class="footer__copyright">
-          <b class="footer__copyright-text">Разработано</b>
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTMLAcademy</a>
+          <a class="footer__copyright-text" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+          <a class="footer__copyright-icon" href="https://htmlacademy.ru/intensive/adaptive">HTMLAcademy</a>
         </div>
       </footer>
     </div>
