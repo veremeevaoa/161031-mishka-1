@@ -1,6 +1,6 @@
 var mainMenu = document.querySelector(".main-nav");
 var menuBtn = document.querySelector(".top-menu__btn");
-var popupOpen = document.querySelector(".modal-link");
+var popupOpen = document.querySelectorAll('.modal-link');
 var popup = document.querySelector(".modal");
 var over = document.querySelector(".modal-overlay");
 
@@ -29,12 +29,14 @@ menuBtn.addEventListener("click", function (event) {
 });
 
 //модальное окно формы заказа
-
-popupOpen.addEventListener("click", function (event) {
-  event.preventDefault();
-  over.classList.add("modal-overlay-show");
-  popup.classList.add("modal-show");
-});
+for (var i = 0; i < popupOpen.length; i++) {
+  popupOpen[i].addEventListener("click", function (event) {
+    event.preventDefault();
+    over.classList.add("modal-overlay-show");
+    popup.classList.add("modal-show");
+  });
+};
+     
 over.addEventListener("click", function (event) {
   event.preventDefault();
   over.classList.remove("modal-overlay-show");
