@@ -20,3 +20,33 @@ img {
   max-width: 100%;
   height: auto;
 }
+.bg-box {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: @bg-secondcolor;
+}
+.bg-box--header {
+  background-color: #f9f9f9;
+}
+@media @tablet-widths {
+  .bg-box--header::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 23px;
+    content: "";
+    margin: 0;
+    padding: 0;
+    background: transparent url("../img/bg-zigzag-fill.svg") repeat center;
+    background-size: auto 23px;
+  }
+}
+@media @desktop-widths {
+  .bg-box--header::after {
+    bottom: -13px;
+    height: 34px;
+    background-size: auto;
+  }
+}
