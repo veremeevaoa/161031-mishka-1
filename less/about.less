@@ -1,17 +1,6 @@
 .about {
-//  position: relative;
   margin: 0;
   padding: 1px 30px 45px;
-//  background-color: aliceblue;
-//  &::after {
-//    position: absolute;
-//    left: 0;
-//    bottom: 0;
-//    width: 100%;
-//    height: 7px;
-//    content: "";
-//    background: transparent url("../img/zigzag-line-decktop.svg");
-//  }
 }
 .about__title {
   .font(@bold;25px;60px);
@@ -50,33 +39,52 @@
   }
 }
 .about__slogan-text--eco {
+  width: 70%;
   &::before {
+    top: 0px;
+    left: 8px;
     background-image: url("../img/icon-feature-1.svg")
   }
 }
 .about__slogan-text--style {
+  width: 77%;
   &::before {
     background-image: url("../img/icon-feature-3.svg")
   }
 }
 .about__slogan-text--like {
+  width: 73%;
   &::before {
+    top: 8px;
+    left: 8px;
+    height: 20px;
     background-image: url("../img/icon-feature-5.svg")
   }
 }
 .about__slogan-text--hand {
+  width: 85%;
   &::before {
+    top: 5px;
+    left: 5px;
+    height: 23px;
     background-image: url("../img/icon-feature-2.svg")
   }
 }
 .about__slogan-text--up {
   &::before {
+    top: 5px;
+    left: -6px;
+    height: 20px;
     background-image: url("../img/icon-feature-4.svg")
   }
 }
 .about__slogan-text--box {
+  width: 85%;
   padding-bottom: 10px;
   &::before {
+    top: 3px;
+    left: 3px;
+    height: 25px;
     background-image: url("../img/icon-feature-6.svg")
   }
 }
@@ -164,9 +172,9 @@
     }
   }
   .about__title--reviews {
-    margin-top: 58px;
+    margin-top: 60px;
     margin-bottom: 30px;
-    padding: 20px 0;
+    padding: 20px 2px;
   }
   .about__review-item {
     margin-top: 33px;
@@ -216,8 +224,9 @@
     vertical-align: top;
   }
   .about__slogan-list--left {
-    width: 27.2%;
-    margin-right: 107px;
+    width: 28%;
+    margin-right: 100px;
+//    background-color: aliceblue;
   }
   .about__slogan-item {
     display: block;
@@ -226,9 +235,61 @@
   }
   .about__slogan-text {
     .font(@bold;20px;25px);
+    width: 100%;
     padding-top: 76px;
     line-height: 22px;
     color: @text-color;
+  }
+  .about__slogan-text--eco {
+    width: 85%;
+    &::before {
+      top: 23px;
+//      left: 8px;
+      background-image: url("../img/icon-feature-1.svg")
+    }
+  }
+  .about__slogan-text--style {
+//    width: 77%;
+    &::before {
+      top: 25px;
+      background-image: url("../img/icon-feature-3.svg")
+    }
+  }
+  .about__slogan-text--like {
+//    width: 73%;
+    &::before {
+//      top: 28px;
+//      left: 8px;
+//      height: 20px;
+      background-image: url("../img/icon-feature-5.svg")
+    }
+  }
+  .about__slogan-text--hand {
+//    width: 85%;
+    &::before {
+      top: 25px;
+      left: 3px;
+//      height: 23px;
+      background-image: url("../img/icon-feature-2.svg")
+    }
+  }
+  .about__slogan-text--up {
+    &::before {
+//      top: 28px;
+//      left: -6px;
+//      height: 20px;
+      background-image: url("../img/icon-feature-4.svg")
+    }
+  }
+  .about__slogan-text--box {
+//    width: 85%;
+    padding-bottom: 10px;
+    &::before {
+      top: 25px;
+      left: 2px;
+//      height: 25px;
+      background-image: url("../img/icon-feature-6.svg")
+    }
   }
   .about__review-wrapper {
     min-height: 456px;
