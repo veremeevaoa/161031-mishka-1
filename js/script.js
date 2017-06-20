@@ -36,7 +36,6 @@ for (var i = 0; i < popupOpen.length; i++) {
     popup.classList.add("modal-show");
   });
 };
-     
 over.addEventListener("click", function (event) {
   event.preventDefault();
   over.classList.remove("modal-overlay-show");
