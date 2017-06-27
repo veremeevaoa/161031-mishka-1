@@ -15,7 +15,7 @@
 .footer__copyright .footer__copyright-icon {
   margin: 0;
   padding: 0;
-  display: inline;
+  display: inline-block;
   vertical-align: top;
   text-decoration: none;
 }
@@ -25,23 +25,23 @@
   color: @text-color;
 }
 .footer__copyright .footer__copyright-icon {
-  display: inline-block;
-  width: 30px;
+//  display: inline-block;
+  width: 28px;
   height: 35px;
   box-sizing: border-box;
   margin-top: -3px;
   text-indent: -9999px;
-  background: transparent url("../img/logo-htmlacademy.svg") no-repeat center;
+  background: transparent url("../img/logo-htmlacademy.svg") no-repeat left top;
 }
 .footer__copyright .footer__copyright-text:active,
 .footer__copyright .footer__copyright-icon:active {
   opacity: 0.3;
 }
-.footer__logo-html {
-  width: 27px;
-  height: 34px;
-  box-sizing: border-box;
-}
+//.footer__logo-html {
+//  width: 27px;
+//  height: 34px;
+//  box-sizing: border-box;
+//}
 
 @media @tablet-widths {
   .footer {
@@ -63,7 +63,7 @@
   }
   .footer__copyright .footer__copyright-text {
     .font(@bold;19px;);
-    margin-right: 25px;
+    margin-right: 26px;
   }
 }
 @media @desktop-widths {
@@ -73,5 +73,13 @@
   }
   .footer__copyright {
     padding-top: 19px;
+  }
+  .footer__copyright .footer__copyright-text {
+    .font(@bold;19px;);
+    margin-right: 22px;
+  }
+  .footer__copyright .footer__copyright-icon {
+    width: 30px;
+    background: transparent url("../img/logo-htmlacademy.svg") no-repeat right top;
   }
 }

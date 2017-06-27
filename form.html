@@ -81,11 +81,13 @@
         <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form class="order-form__form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="order-form__category  order-form__category--section">
-              <legend class="order-form__category-name">Тип</legend>
-              <input class="order-form__section-field" type="radio" name="section" value="interior" id="interior" required checked>
-              <label class="order-form__section-label" for="interior">Аксессуар для интерьера</label>
-              <input class="order-form__section-field" type="radio" name="section" value="toys" id="toys" required>
-              <label class="order-form__section-label  order-form__section-label--last" for="toys">Детская игрушка</label>
+              <legend class="order-form__category-name  order-form__category-name--section">Тип</legend>
+              <div class="flex-container  flex-container--section">
+                <input class="order-form__section-field" type="radio" name="section" value="interior" id="interior" required checked>
+                <label class="order-form__section-label" for="interior">Аксессуар для интерьера</label>
+                <input class="order-form__section-field" type="radio" name="section" value="toys" id="toys" required>
+                <label class="order-form__section-label  order-form__section-label--last" for="toys">Детская игрушка</label>
+              </div>
             </fieldset>
             <fieldset class="order-form__category  order-form__category--color">
               <legend class="order-form__category-name  order-form__category-name--color">Цвет</legend>
